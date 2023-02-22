@@ -42,17 +42,20 @@ Será usado o delphi e ffreepascal (com lazarus) para os exemplos e eventualmente
         - down n
         - left n
         - right n
-        onde n pdoe ser um parãmetro global indicando quantos passos para cada lado
+    - Onde n pode ser um parâmetro global indicando quantos passos para cada lado. O valor deve ser sempre passado.
 
-    - O sevidor deve iniciar com uma bola vermelha no centro da janela (com oe vento FormCreate posicione o Tshape no centro da janela criada). 
-        - Antes deve haver um botão para abrir o ervidor e fechar, na portadefinida em um Tedit ou algum controle parecido.
+    - O sevidor deve iniciar com uma bola vermelha no centro da janela (como e vento FormCreate posicione o Tshape no centro da janela criada). 
+        - Antes deve haver um botão para abrir o servidor e fechar, na portadefinida em um Tedit ou algum controle parecido.
         - Receba os comandos e decodifique a string recebida pelo socket, sendo o tamanho do passo em pixesdefinido em um coytrole.
-        - Caso o controle vá ficar inteiramente fora da janela, não permita, rtornado o texto ERRO pelo socket. Se tudo ok, mova a bola e retorne OK.
+        - Caso o controle vá ficar inteiramente fora da janela, não permita, retornado o texto ERRO pelo socket e mudando a cor do TShape (vermelho -> verde -> Azul -> Amarelo -> Aleatório). Se tudo ok, mova a bola e retorne OK.
+    
+    - Dica: Use Type Cast para TColor() a partir de integer. Pesquise a função Random() e Randomize().
 
-    - Altere os dois projetos para ter um log de tudo enviado e recebido em cada um dos programas, assim como a conexão/desconexão. tudo com data e hora antes. 
+    - Altere os dois projetos para ter um log de tudo enviado e recebido em cada um dos programas, assim como a conexão/desconexão. Tudo com data e hora antes. 
         - Exemplos:
             - [22/02/2013 13:12:30] Conectado.
             - [22/02/2013 13:12:31] ERRO.
+
 
 
 - Num banco de dados postgreSQL local criar uma cadastro de ideias de melhoria para a sua empresa. Deverá ter as tabelas de setores, usuarios, ideias e detalhamento de ideias e registro de avaliações. Desta forma, alé mde permitir o CRUD (Criar/Altrar consultar e editar) das ideias e usuários deve permitir que usuário autenticados possa dar notas e até avaliações de texto paracada ideia. Deverá ter divisão de responsabildiade. cuidado para não por muito código nas telas (pense que em um próximo desafio você pode criar uma Web API).
