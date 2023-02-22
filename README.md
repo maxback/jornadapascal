@@ -17,6 +17,8 @@ Será usado o delphi e ffreepascal (com lazarus) para os exemplos e eventualmente
 
 [Download do ambiente Lazarus para FreePascal](https://www.lazarus-ide.org/index.php?page=downloads)
 
+[Para obter o Delphi Community Edition](https://www.embarcadero.com/br/products/delphi/starter)
+
 [Download do TortoiseGit](https://tortoisegit.org/download/)
 
 [Estrutura básica de um programa Delphi](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Programs_and_Units_(Delphi))
