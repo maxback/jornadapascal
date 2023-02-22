@@ -26,12 +26,51 @@ Será usado o delphi e ffreepascal (com lazarus) para os exemplos e eventualmente
 [Video básico sobre Delphi](https://www.youtube.com/watch?v=0VPvQ_dXMhw)
 
 
-# projetos desafios
+# projetos
+
+- Criar um programa que mande a Data e hora e horário atual (e se sobrar espaço) mais alguma outa informação, com o dia da semana para um display LCD simulado (coloque um lable com fonte grande, fundo verde, wordwrap = true e autosize = false). Use as funções formatDatetime e Now, assim como o componnte TTimer atualizar a cada segundo.
+
+- Adicione um botão ao projeto anterior para capturar a data e hora no instante que o pressionou e adicione em uma linha unica de um listbox. depois, trate o evento de click do
+  listobox para ao selecionar a linha. mostrar os dados novamente, dea acordo com o item selecionado (depois de um segundo ou menos voltará a atualizar).
+  Quando isto funcionar, adicione um botão com o texto "Parar" que ao pressionado para de atualziar o display e muda o botãoapra "Rodar" (e volta a atualziar o horário). 
+  Por fim, quando adicione o comportamente de apagar os itens mais antigos da lsita se passar de 20 items e parar (como se pressionasse o botão aparar) ao selecionar o item
+  para msotrar no display.
+
+- Creio dois projetos, cada um com sua janela, paracomunicação socket, sendo um cliente e outro servidor.  
+    - O cliente deve ter um campo apra por o endereço IP, porta e um checkbox conectar. Crie controles para enviar os seguintes comandos:
+        - up n
+        - down n
+        - left n
+        - right n
+        onde n pdoe ser um parãmetro global indicando quantos passos para cada lado
+
+    - O sevidor deve iniciar com uma bola vermelha no centro da janela (com oe vento FormCreate posicione o Tshape no centro da janela criada). 
+        - Antes deve haver um botão para abrir o ervidor e fechar, na portadefinida em um Tedit ou algum controle parecido.
+        - Receba os comandos e decodifique a string recebida pelo socket, sendo o tamanho do passo em pixesdefinido em um coytrole.
+        - Caso o controle vá ficar inteiramente fora da janela, não permita, rtornado o texto ERRO pelo socket. Se tudo ok, mova a bola e retorne OK.
+
+    - Altere os dois projetos para ter um log de tudo enviado e recebido em cada um dos programas, assim como a conexão/desconexão. tudo com data e hora antes. 
+        - Exemplos:
+            - [22/02/2013 13:12:30] Conectado.
+            - [22/02/2013 13:12:31] ERRO.
+
 
 - Num banco de dados postgreSQL local criar uma cadastro de ideias de melhoria para a sua empresa. Deverá ter as tabelas de setores, usuarios, ideias e detalhamento de ideias e registro de avaliações. Desta forma, alé mde permitir o CRUD (Criar/Altrar consultar e editar) das ideias e usuários deve permitir que usuário autenticados possa dar notas e até avaliações de texto paracada ideia. Deverá ter divisão de responsabildiade. cuidado para não por muito código nas telas (pense que em um próximo desafio você pode criar uma Web API).
 
 - Montar um cliente delphi/freepascal para uma API publica.
-Pode-se usar [este frameork](https://github.com/viniciussanchez/RESTRequest4Delphi) e umas [desta aPIs](https://medium.com/reactbrasil/10-apis-gr%C3%A1tis-e-legais-para-voc%C3%AA-consumir-69141988ea0b), por exemplo.
+Pode-se usar [este framework](https://github.com/viniciussanchez/RESTRequest4Delphi) e umas [destas aPIs](https://medium.com/reactbrasil/10-apis-gr%C3%A1tis-e-legais-para-voc%C3%AA-consumir-69141988ea0b), por exemplo.
 
 
 - Criar uma Web API para o projeto dos cadastros de ideias no padrão REST. Ver o que há de nativo no Delphi/Lazarus. uma opção pode ser este [PROJETO DO gitHUB](https://github.com/glprog/MiniREST).
+
+
+- Faça uma aplicação cliente para o projeto anterior (o usuári odeve pdoder fazer todas as opções em janelas chamadas a partir de uma janela principal). Deve msotrar uma janela de login ao entrar, com usuário e senha. Fechr o programase errar a senha. Cada janela deve ser chamada modal a aprtir de botões e itens de menu.
+
+
+# Desafios
+
+- Coding Game (Precisa criar usuário penso eu e desenvolve na própria plataforma)
+    - [Power of Thor](https://www.codingame.com/ide/puzzle/power-of-thor). Selecione a linguagem pascal (você condifica nu mesqueleto cada movimento do personágem)
+    - [PASCAL TRAPEZOID - By player_one](https://www.codingame.com/training/hard/pascal-trapezoid)
+
+
