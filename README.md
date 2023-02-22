@@ -11,7 +11,7 @@ Será usado o delphi e ffreepascal (com lazarus) para os exemplos e eventualmente
 
 # Links
 
-[PROGRAMAÇÃO EM DELPHI PARA INICIANTES - Livro de Yuriy Kalmykov](https://embarcaderobr.com.br/wp-content/uploads/2016/10/DelphiProgramming4Beginners_PTBR_1.1.pdf)
+[PROGRAMAÇÃO EM DELPHI PARA INICIANTES - Livro de Yuriy Kalmykov](https://embarcaderobr.com.br/wp-content/uploads/2016/10/DelphiProgramming4Beginners_PTBR_1.1.pdf) - Dar uma passada pelo livro é uam boa ideia. Assim como fazer os exercícios.
 
 [Free Pascal User’s Guide](https://www.freepascal.org/docs-html/user/user.html)
 
@@ -63,10 +63,14 @@ Será usado o delphi e ffreepascal (com lazarus) para os exemplos e eventualmente
 - Num banco de dados postgreSQL local criar uma cadastro de ideias de melhoria para a sua empresa. Deverá ter as tabelas de setores, usuarios, ideias e detalhamento de ideias e registro de avaliações. Desta forma, alé mde permitir o CRUD (Criar/Altrar consultar e editar) das ideias e usuários deve permitir que usuário autenticados possa dar notas e até avaliações de texto paracada ideia. Deverá ter divisão de responsabildiade. cuidado para não por muito código nas telas (pense que em um próximo desafio você pode criar uma Web API).
 
 - Montar um cliente delphi/freepascal para uma API publica.
-Pode-se usar [este framework](https://github.com/viniciussanchez/RESTRequest4Delphi) e umas [destas aPIs](https://medium.com/reactbrasil/10-apis-gr%C3%A1tis-e-legais-para-voc%C3%AA-consumir-69141988ea0b), por exemplo.
+Com o que tem no delphi deve ser possível. [Ver este exemplo do covid](https://youtu.be/pQihgjUTSLE) ou [este sobre o clima](https://youtu.be/l6Oay-_AD2M?list=PLirOv2X-wJl_RQLkRBTUFb9Rn6HjuXQ38). Aqui tem [mais exemplos de aPIs](https://medium.com/reactbrasil/10-apis-gr%C3%A1tis-e-legais-para-voc%C3%AA-consumir-69141988ea0b).
+
+Pode-se usar [este framework](https://github.com/viniciussanchez/RESTRequest4Delphi).
 
 
-- Criar uma Web API para o projeto dos cadastros de ideias no padrão REST. Ver o que há de nativo no Delphi/Lazarus. uma opção pode ser este [PROJETO DO gitHUB](https://github.com/glprog/MiniREST).
+- Criar uma Web API para o projeto dos cadastros de ideias no padrão REST. Ver o que há de nativo no Delphi/Lazarus. 
+Deve ser possivel com o que tem no Delphi. [Ver Video](https://youtu.be/R7jIbcX-f_E)
+Uma opção pode ser este [PROJETO DO gitHUB](https://github.com/glprog/MiniREST).
 
 
 - Faça uma aplicação cliente para o projeto anterior (o usuári odeve pdoder fazer todas as opções em janelas chamadas a partir de uma janela principal). Deve msotrar uma janela de login ao entrar, com usuário e senha. Fechr o programase errar a senha. Cada janela deve ser chamada modal a aprtir de botões e itens de menu.
